@@ -1,0 +1,77 @@
+[
+    {
+        "id":1,
+        "product_name":"Hangers & Hooks",
+        "product_code":"001",
+        "background":"tranparent",
+        "sub_product":[
+            
+        ],
+        "selected_images":[
+            {
+                "imgid":"fst",
+                "imageURL":"ricecooker.jpg"
+            },
+            {
+                "imgid":"sec",
+                "imageURL":"mixer.jpg"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "product_name":"Cloth Rack",
+        "product_code":"002",
+        "background":"transparent",
+        "sub_product":[
+            
+        ],
+        "selected_images":[
+            {
+                "imgid":"fst",
+                "imageURL":"mixer.jpg"
+            },
+            {
+                "imgid":"sec",
+                "imageURL":"ricecooker.jpg"
+            }
+        ]
+        
+    },
+    {
+        "id":3,
+        "product_name":"Cooking Range",
+        "product_code":"002",
+        "background":"white",
+        "sub_product":[
+            {
+                "sub_product_id":11,
+                "sub_product_name":"Mini Air Condition"
+            },
+            {
+                "sub_product_id":21,
+                "sub_product_name":"Micro Air Condition"
+            }
+        ],
+        "selected_images":[
+        ]
+    },
+    {
+        "id":3,
+        "product_name":"Washing Machine",
+        "product_code":"002",
+        "background":"white",
+        "sub_product":[
+            {
+                "sub_product_id":11,
+                "sub_product_name":"Condition"
+            },
+            {
+                "sub_product_id":21,
+                "sub_product_name":"Condition"
+            }
+        ],
+        "selected_images":[
+        ]
+    }
+]

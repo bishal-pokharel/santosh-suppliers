@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../css/menubar.styles.scss';
-import {Servicedata} from '../data/electricalAppliances';
-import newData from "../data/electricalAppliances.json"
+import homeImprovement from '../data/homeImprovement.json';
+import electricalAppliances from "../data/electricalAppliances.json"
 
 const MenuBar = (() =>{
 
@@ -14,7 +14,7 @@ const MenuBar = (() =>{
                     <li className="menu_list">Electrical Appliances
                         <ul className="sub_menu">
                             {
-                                newData.map((data) =>{
+                                electricalAppliances.map((data) =>{
                                             return(
                                                 <>
                                                 <li className="product_list" key={data.id}><Link to='/'>{data.product_name}</Link>
@@ -53,7 +53,46 @@ const MenuBar = (() =>{
                     </li>
 
 
-                    <li>Home Improvement</li>
+                    <li className="menu_list">Home Improvement
+                    <ul className="sub_menu">
+                            {
+                                homeImprovement.map((data) =>{
+                                            return(
+                                                <>
+                                                <li className="product_list" key={data.id}><Link to='/'>{data.product_name}</Link>
+                                                <ul className="sub_head_menu" style={{background:data.background}}>
+                                                {data?.sub_product?.length > 0 &&
+                                                data.sub_product.map((list)=>{
+                                                    return(
+                                                        <li className="sub_product_list" key={list.sub_product_id}>{list.sub_product_name}</li>
+                                                    )
+                                                })}
+                                                </ul>
+
+                                                <ul className="nav_image_list_default">
+                                                    {data?.selected_images && data?.selected_images?.length > 0 && 
+                                                    data.selected_images.map((img)=>{
+                                                        return(
+                                                            <li className="sub_product_img" key={img.imgid}><img src={`../images/${img?.imageURL}`} alt="not found" /></li>
+                                                        )
+                                                    })}
+                                                </ul> 
+                                                </li>
+                                                {/* this ul is for default image showing in sub list */}
+                                                <ul className="nav_image_list">
+                                                    {data?.selected_images && data?.selected_images?.length > 0 && 
+                                                    data.selected_images.map((img)=>{
+                                                        return(
+                                                            <li className="sub_product_img" key={img.imgid}><img src={`../images/${img?.imageURL}`} alt="not found" /></li>
+                                                        )
+                                                    })}
+                                                </ul> 
+                                                </>
+                                            )
+                                })
+                            }
+                        </ul>
+                    </li>
                     <li>Dinner & Serveware </li>
                     <li>cook & Bakeware</li>
                     <li>Kitchen tools</li>
