@@ -27,7 +27,7 @@ const MenuBar = (() =>{
                                                 })}
                                                 </ul>
 
-                                                <ul className="nav_image_list">
+                                                <ul className="nav_image_list_default">
                                                     {data?.selected_images && data?.selected_images?.length > 0 && 
                                                     data.selected_images.map((img)=>{
                                                         return(
@@ -36,6 +36,15 @@ const MenuBar = (() =>{
                                                     })}
                                                 </ul> 
                                                 </li>
+                                                {/* this ul is for default image showing in sub list */}
+                                                <ul className="nav_image_list">
+                                                    {data?.selected_images && data?.selected_images?.length > 0 && 
+                                                    data.selected_images.map((img)=>{
+                                                        return(
+                                                            <li className="sub_product_img" key={img.imgid}><img src={`../images/${img?.imageURL}`} alt="not found" /></li>
+                                                        )
+                                                    })}
+                                                </ul> 
                                                 </>
                                             )
                                 })

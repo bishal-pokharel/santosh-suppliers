@@ -142,3 +142,37 @@ ul{
     // display: block;
     opacity: 1;
 }
+
+.nav_image_list_default{
+    position: absolute;
+    left: 35%;
+    top: 0;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .sub_product_img{
+        // display: flex;
+        // justify-content: flex-end;
+        // align-items: center;
+        list-style: none;
+        img{
+            width: 100%;
+        }
+    }
+    :first-child{
+        width: 70%;
+        height: 95%;
+        object-fit: cover;
+    }
+    :last-child{
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+    }
+}
+.menuBar_container .menubar .menu .sub_menu li:hover .nav_image_list_default{
+    display: none;
+    // opacity: 1;
+}
