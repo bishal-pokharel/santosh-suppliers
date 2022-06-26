@@ -1,0 +1,98 @@
+// css for topnav.js started
+.header_div{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #d8e3ed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+}
+.title_left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.title_right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    .social_media{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center
+    }
+}
+// css for topnav.js ended
+
+// css for navbar.js started
+.navbar{
+    width: 100%;
+    // height: 13%;
+    background-color:#FFF;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -13%);
+    .navbar_item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0% 3%;
+
+        .search_box{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            #outlined-adornment-weight{
+                margin: 0;
+            }
+        }
+        .logo_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 15%;
+        }
+        .login_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 20%;
+
+            .login_cart_love{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 3vh;
+
+                .login, .loved_icon, .card_icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .card_icon > svg{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

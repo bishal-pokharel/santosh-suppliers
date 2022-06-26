@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "product_name":"Air Conditioners",
+        "product_code":"001",
+        "sub_product":[
+            {
+                "sub_product_id":11,
+                "sub_product_name":"Mini Air Condition"
+            },
+            {
+                "sub_product_id":21,
+                "sub_product_name":"Micro Air Condition"
+            }
+        ],
+        "selected_images":[
+            {
+                "imgid":"fst",
+                "imageURL":"slide03.jpg"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "product_name":"Coller",
+        "product_code":"002",
+        "sub_product":[
+            
+        ]
+        
+    },
+    {
+        "id":3,
+        "product_name":"Coller",
+        "product_code":"002",
+        "sub_product":[
+            
+        ],
+        "selected_images":[
+        ]
+    }
+]
