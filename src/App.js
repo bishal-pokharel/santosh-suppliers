@@ -14,8 +14,8 @@ function App() {
         <TopNav />
         {/* <NavBar /> */}
         <Switch>
-        <Route path="/" exact component={NavBar} />
-          <Route path="/product/:id" component={ProductItem} />
+        <Route exact path="/" component={NavBar} />
+        <Route exact path="/product/:id" component={ProductItem} />
         </Switch>
         {/* <Slider />
         <MenuBar />
