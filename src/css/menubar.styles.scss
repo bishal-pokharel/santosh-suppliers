@@ -36,7 +36,7 @@ ul{
             height: 100%;
         .menu_list{
             list-style: none;
-            padding: 1% 1%;
+            padding: 1% 0%;
             height: 100%;
             // position: relative;
             display: flex;
@@ -45,6 +45,9 @@ ul{
             &:hover{
                 border-bottom: 3px solid brown;
                 transition: border-bottom 0.5s ease-in;
+            }
+            a{
+                color: #FFF;
             }
         }
         .sub_menu{

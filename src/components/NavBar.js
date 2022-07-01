@@ -10,10 +10,14 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.png';
+import MenuBar from './MenuList';
+import Slider from './slider';
+import Advertise from './headerAdvertise'
 
 const NavBar = (()=> {
 
     return(
+        <>
         <div className="navbar">
             <div className="navbar_item">
                 <div className="search_box">
@@ -50,6 +54,10 @@ const NavBar = (()=> {
                 </div>
             </div>
         </div>
+        <Slider />
+        <MenuBar />
+        <Advertise />
+        </>
     )
 });
 export default NavBar;

@@ -1,0 +1,14 @@
+[
+    {
+       "id":"1",
+        "product_name":"Heater"
+    },
+    {
+        "id":"2",
+        "product_name":"Gas"
+    },
+    {
+        "id":"3",
+        "product_name":"cooler"
+    }
+]

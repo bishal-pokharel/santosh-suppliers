@@ -45,11 +45,11 @@
         "background":"white",
         "sub_product":[
             {
-                "sub_product_id":11,
+                "sub_product_id":"1",
                 "sub_product_name":"Mini Air Condition"
             },
             {
-                "sub_product_id":21,
+                "sub_product_id":"2",
                 "sub_product_name":"Micro Air Condition"
             }
         ],
@@ -63,11 +63,11 @@
         "background":"white",
         "sub_product":[
             {
-                "sub_product_id":11,
+                "sub_product_id":"1",
                 "sub_product_name":"Condition"
             },
             {
-                "sub_product_id":21,
+                "sub_product_id":"2",
                 "sub_product_name":"Condition"
             }
         ],
