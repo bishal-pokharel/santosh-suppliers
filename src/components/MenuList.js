@@ -17,7 +17,7 @@ const MenuBar = (() =>{
                                 electricalAppliances.map((data) =>{
                                             return(
                                                 <>
-                                                <li className="product_list" key={data.id}><Link to='/'>{data.product_name}</Link>
+                                                <li className="product_list" key={data.id}><Link to={`/product/${data.id}`}>{data.product_name}</Link>
                                                 <ul className="sub_head_menu" style={{background:data.background}}>
                                                 {data?.sub_product?.length > 0 &&
                                                 data.sub_product.map((list)=>{
