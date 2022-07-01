@@ -1,22 +1,24 @@
 import React from "react";
-import ProductItems from '../product/productItem.json'
+import ProductItems from '../product/productItem.json';
+import { useParams } from "react-router-dom";
 
 
-const ProductItem = (({match})=>{
+const ProductItem = (()=>{
 
-    const p_id = match.params.id
-
+    const{ id }= useParams();
+    console.log(id);
     return(
         <>
-        {ProductItems.filter((filterid) => filterid.id.includes(p_id)).map((data) => {
+        {ProductItems.filter((filterid) => filterid.id.includes(id)).map((data) => {
             return(
                 <>
-                <h1 key={data.p_id}>{data.product_name}</h1>
+                <h1 key={data.id}>{data.product_name}</h1>
+                <h1>Yes I called....</h1>
                 </>
             )
             
         })}
-        <h1>Yes I called....</h1>
+       
         </>
     )
 

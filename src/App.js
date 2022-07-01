@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <TopNav />
         {/* <NavBar /> */}
-        <Switch>
-        <Route path="/" exact component={NavBar} />
-          <Route path="/product/:id" component={ProductItem} />
-        </Switch>
+        <Routes>
+        <Route exact path="/" element={<NavBar />} />
+          <Route exact path="/product/:id" element={<ProductItem />} />
+        </Routes>
         {/* <Slider />
         <MenuBar />
         <Advertise /> */}
