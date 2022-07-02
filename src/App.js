@@ -14,7 +14,7 @@ function App() {
         <TopNav />
         {/* <NavBar /> */}
         <Routes>
-        <Route exact path="/" element={<NavBar />} />
+          <Route exact path="/" element={<NavBar />} />
           <Route exact path="/product/:id" element={<ProductItem />} />
         </Routes>
         {/* <Slider />
