@@ -5,7 +5,7 @@
         "product_code":"001",
         "background":"tranparent",
         "sub_product":[
-            
+
         ],
         "selected_images":[
             {
@@ -24,7 +24,7 @@
         "product_code":"002",
         "background":"transparent",
         "sub_product":[
-            
+
         ],
         "selected_images":[
             {
@@ -36,7 +36,7 @@
                 "imageURL":"ricecooker.jpg"
             }
         ]
-        
+
     },
     {
         "id":3,
@@ -57,7 +57,7 @@
         ]
     },
     {
-        "id":3,
+        "id":4,
         "product_name":"Coller",
         "product_code":"002",
         "background":"white",

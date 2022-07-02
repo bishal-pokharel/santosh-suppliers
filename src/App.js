@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Switch} from 'react-router-dom';
 import TopNav from './components/TopNav';
 import NavBar from './components/NavBar';
 // import MenuBar from './components/MenuList';
@@ -10,17 +10,17 @@ import ProductItem from './components/product/ProductItem'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <TopNav />
         {/* <NavBar /> */}
-        <Switch>
-        <Route exact path="/" component={NavBar} />
-        <Route exact path="/product/:id" component={ProductItem} />
-        </Switch>
+        <Routes>
+        <Route exact path="/" element={<NavBar />} />
+          <Route exact path="/product/:id" element={<ProductItem />} />
+        </Routes>
         {/* <Slider />
         <MenuBar />
         <Advertise /> */}
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
