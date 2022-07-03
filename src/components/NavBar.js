@@ -12,7 +12,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.png';
 import MenuBar from './MenuList';
 import Slider from './slider';
-import Advertise from './headerAdvertise'
+import Advertise from './headerAdvertise';
+import ProductCard from './ProductCard';
 
 const NavBar = (()=> {
 
@@ -55,8 +56,10 @@ const NavBar = (()=> {
             </div>
         </div>
         <Slider />
+        <ProductCard />
         <MenuBar />
         <Advertise />
+        
         </>
     )
 });

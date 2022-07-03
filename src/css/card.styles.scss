@@ -1,0 +1,52 @@
+.card_container{
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50% , -50%);
+    height: 65vh;
+    background-color: antiquewhite;
+
+
+    .card_wrap{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    // margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 75%;
+        width: 18%;
+        background-color: cadetblue;
+        margin: 2%;
+        border-radius: 5px;
+        filter: drop-shadow(1px 1px 5px black);
+
+        .card_img{
+            height: 60%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    }
+}

@@ -6,6 +6,7 @@ html, body{
   line-height: 1.53486;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 *{
   box-sizing: border-box;

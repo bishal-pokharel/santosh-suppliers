@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "images":"ricecooker.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    },
+    {
+        "id":2,
+        "images":"mixer.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    },
+    {
+        "id":3,
+        "images":"ricecooker.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    },
+    {
+        "id":4,
+        "images":"mixer.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    },
+    {
+        "id":5,
+        "images":"mixer.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    },
+    {
+        "id":6,
+        "images":"ricecooker.jpg",
+        "product_name":"Ricecooker",
+        "product_price": "Rs 1200.00",
+        "in_stock": "In Stock",
+        "offer_rate": "12%",
+        "trending_product":"Trending_product"
+    }
+]
