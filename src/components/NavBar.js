@@ -55,10 +55,10 @@ const NavBar = (()=> {
                 </div>
             </div>
         </div>
-        <Slider />
-        <ProductCard />
         <MenuBar />
+        <Slider />
         <Advertise />
+        <ProductCard />
         
         </>
     )

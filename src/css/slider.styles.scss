@@ -5,7 +5,12 @@
     left: 50%;
     transform: translateX(-50%);
     .slider{
+        position: absolute;
         height: 100%;
+        width: 100%;
+        left: 50%;
+        top: 33%;
+        transform: translate(-50%, -50%);
 
         .slider_img_div{
             height: 100%;
@@ -24,7 +29,7 @@
 .header_add_container{
     width: 80%;
     left: 50%;
-    top: 85%;
+    top: 88%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -33,4 +38,18 @@
     background-color: black;
     color: #FFF;
     height: 12%;
+}
+
+@media (max-width:1080px){
+    .slider_container{
+        height: 45vh;
+
+        .slider_container .slider{
+            top: 42%;
+        }
+    }
+    .header_add_container{
+        top: 65%;
+    }
+    
 }

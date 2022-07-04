@@ -10,6 +10,11 @@ const MenuBar = (() =>{
     return(
         <div className="menuBar_container">
             <div className="menubar">
+            <input type="checkbox" className="menu-btn" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn">
+                <span className="nav-icon"></span>
+            </label>
+
                 <ul className="menu">
                     <li className="menu_list"><Link to="/">Electrical Appliances</Link>
                         <ul className="sub_menu">
