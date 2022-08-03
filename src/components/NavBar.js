@@ -10,10 +10,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.png';
-import MenuBar from './MenuList';
-import Slider from './slider';
-import Advertise from './headerAdvertise';
-import ProductCard from './ProductCard';
+// import MenuBar from './MenuList';
 
 const NavBar = (()=> {
 
@@ -55,11 +52,7 @@ const NavBar = (()=> {
                 </div>
             </div>
         </div>
-        <MenuBar />
-        <Slider />
-        <Advertise />
-        <ProductCard />
-        
+        {/* <MenuBar /> */}
         </>
     )
 });

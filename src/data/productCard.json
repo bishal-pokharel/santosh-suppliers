@@ -3,15 +3,23 @@
         "id":1,
         "images":"ricecooker.jpg",
         "product_name":"Ricecooker",
+        "Product_full_name":"Electron Digital 5 ltr Ricecooker",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
+        "product_dis_price":"Rs 1500.00",
         "offer_rate": "12%",
-        "trending_product":"Trending_product"
+        "trending_product":"Trending_product",
+        "product_details":[
+            "ab",
+            "xy",
+            "wx"
+        ]
     },
     {
         "id":2,
         "images":"mixer.jpg",
-        "product_name":"Ricecooker",
+        "product_name":"Heater",
+        "Product_full_name":"Electron Digital 5 ltr Ricecooker",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
         "offer_rate": "12%",
@@ -20,7 +28,8 @@
     {
         "id":3,
         "images":"ricecooker.jpg",
-        "product_name":"Ricecooker",
+        "product_name":"Cooler",
+        "Product_full_name":"Electron Digital 5 ltr Ricecooker",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
         "offer_rate": "12%",
@@ -29,7 +38,7 @@
     {
         "id":4,
         "images":"mixer.jpg",
-        "product_name":"Ricecooker",
+        "product_name":"Fan",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
         "offer_rate": "12%",
@@ -38,7 +47,8 @@
     {
         "id":5,
         "images":"mixer.jpg",
-        "product_name":"Ricecooker",
+        "product_name":"Freeze",
+        "Product_full_name":"Electron Digital 5 ltr Ricecooker",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
         "offer_rate": "12%",
@@ -47,7 +57,8 @@
     {
         "id":6,
         "images":"ricecooker.jpg",
-        "product_name":"Ricecooker",
+        "product_name":"Induction",
+        "Product_full_name":"Electron Digital 5 ltr Ricecooker",
         "product_price": "Rs 1200.00",
         "in_stock": "In Stock",
         "offer_rate": "12%",

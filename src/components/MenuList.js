@@ -4,10 +4,15 @@ import '../css/menubar.styles.scss';
 import homeImprovement from '../data/homeImprovement.json';
 import electricalAppliances from "../data/electricalAppliances.json"
 
+import Slider from './slider';
+import Advertise from './headerAdvertise';
+import ProductCard from './ProductCard';
+
 const MenuBar = (() =>{
 
 
     return(
+        <>
         <div className="menuBar_container">
             <div className="menubar">
             <input type="checkbox" className="menu-btn" id="menu-btn" />
@@ -107,6 +112,10 @@ const MenuBar = (() =>{
                 </ul>
             </div>
         </div>
+        <Slider />
+        <Advertise />
+        <ProductCard />
+        </>
     )
 });
 export default MenuBar;
