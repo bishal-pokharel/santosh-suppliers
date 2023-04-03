@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Input from '@mui/material/Input';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -10,16 +10,31 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.png';
+import { Navigate, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 // import MenuBar from './MenuList';
 
 const NavBar = (()=> {
+    const navigate = useNavigate();
+    var arr = [];
+    const [userkeypress, setUserKeyPress] =  useState([]);
 
+    const keyPressFunction = (e) => {
+        var values = e.target.value;
+        arr.push(values);
+        setUserKeyPress({...arr});
+        let product = arr[0].toLowerCase();
+        console.log(product);
+        if(e.key === "Enter"){
+            navigate(`product/${arr[0]}`);
+        }
+    }
     return(
         <>
         <div className="navbar">
             <div className="navbar_item">
                 <div className="search_box">
-                <FormControl sx={{ m: 5, width: '55ch' }} variant="filled">
+                <FormControl sx={{ m: 5, width: '55ch' }} variant="filled" onKeyPress = {keyPressFunction}>
                 <OutlinedInput
                 id=""
                 endAdornment={<InputAdornment position="end">
@@ -39,7 +54,7 @@ const NavBar = (()=> {
                 <div className="login_div">
                     <div className="login_cart_love">
                         <div className="login">
-                            <span>login</span><PersonIcon sx={{ fontSize: 30}} />
+                            <Link to="/login"><span>login</span><PersonIcon sx={{ fontSize: 30}} /></Link>
                         </div>
                         <div className="loved_icon">
                         <FavoriteIcon sx={{ fontSize: 30}} /> <span>0</span>

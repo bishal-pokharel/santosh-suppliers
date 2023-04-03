@@ -6,7 +6,7 @@ import ProductItem from './components/product/ProductItem';
 import Footer from './components/Footer';
 import SingleProduct from './components/individualitem/SingleProduct'
 import MenuBar from './components/MenuList';
-
+import { Login } from './components/login/login';
 function App() {
   return (
     <div className="App">
@@ -16,8 +16,9 @@ function App() {
         <Routes>
           {/* <Route exact path="/" element={<NavBar />} /> */}
           <Route exact path="/" element={<MenuBar />} />
-          <Route exact path="/product/:id" element={<ProductItem />} />
+          <Route exact path="/product/:product_name" element={<ProductItem />} />
           <Route exact path="/individualitem/:product_name" element={<SingleProduct />} />
+          <Route exact path="/login" element={<Login />} />
         </Routes>
         {/* <Slider />
         <MenuBar />

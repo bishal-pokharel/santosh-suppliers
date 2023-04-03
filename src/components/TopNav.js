@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom'
 import '../css/Navbar.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 // import { faTwitter } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,7 +11,7 @@ const TopNav = (() => {
         <>
         <div className="header_div">
             <div className="title_left">
-                <h2>Santosh Suppliers</h2>
+                <h2><Link to="/">Santosh Suppliers</Link></h2>
                 <address>Sirutar, Bhaktapur</address>
                 <address>Contact No: 9817355558 / 9862079308</address>
             </div>
